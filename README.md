@@ -1,8 +1,15 @@
-## Clash for Android
+## Clash for AndroidTV
+
+forked from [Clash for Android](https://github.com/Kr328/ClashForAndroid)
+
+embed a web server to input long text using other device,such as smart phone
+
+![截图](./img/img.png)
 
 A Graphical user interface of [clash](https://github.com/Dreamacro/clash) for Android
 
-<a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash"><img width="200px" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"/></a> or [Releases](https://github.com/Kr328/ClashForAndroid/releases)
+<a href="https://play.google.com/store/apps/details?id=com.github.kr328.clash"><img width="200px" alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"/></a>
+or [Releases](https://github.com/Kr328/ClashForAndroid/releases)
 
 ### Feature
 

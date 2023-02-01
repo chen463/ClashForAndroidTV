@@ -37,7 +37,7 @@ subprojects {
                 applicationId = "com.github.kr328.clash"
             }
 
-            minSdk = 21
+            minSdk = 29
             targetSdk = 31
 
             versionName = "2.5.12"

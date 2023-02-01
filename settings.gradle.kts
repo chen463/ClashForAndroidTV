@@ -35,19 +35,34 @@ dependencyResolutionManagement {
             val kaidl = "1.15"
             val room = "2.4.2"
             val multiprocess = "1.0.0"
+            val zxing = "3.5.1"
+            val nanohttpd = "2.3.1"
+            val gson = "2.10.1"
 
             library("build-android", "com.android.tools.build:gradle:$agp")
             library("build-kotlin-common", "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin")
-            library("build-kotlin-serialization", "org.jetbrains.kotlin:kotlin-serialization:$kotlin")
+            library(
+                "build-kotlin-serialization",
+                "org.jetbrains.kotlin:kotlin-serialization:$kotlin"
+            )
             library("build-ksp", "com.google.devtools.ksp:symbol-processing-gradle-plugin:$ksp")
             library("build-golang", "com.github.kr328.golang:gradle-plugin:$golang")
-            library("kotlin-coroutine", "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine")
-            library("kotlin-serialization-json", "org.jetbrains.kotlinx:kotlinx-serialization-json:$serialization")
+            library(
+                "kotlin-coroutine",
+                "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutine"
+            )
+            library(
+                "kotlin-serialization-json",
+                "org.jetbrains.kotlinx:kotlinx-serialization-json:$serialization"
+            )
             library("androidx-core", "androidx.core:core-ktx:$coreKtx")
             library("androidx-activity", "androidx.activity:activity:$activity")
             library("androidx-fragment", "androidx.fragment:fragment:$fragment")
             library("androidx-appcompat", "androidx.appcompat:appcompat:$appcompat")
-            library("androidx-coordinator", "androidx.coordinatorlayout:coordinatorlayout:$coordinator")
+            library(
+                "androidx-coordinator",
+                "androidx.coordinatorlayout:coordinatorlayout:$coordinator"
+            )
             library("androidx-recyclerview", "androidx.recyclerview:recyclerview:$recyclerview")
             library("androidx-viewpager", "androidx.viewpager2:viewpager2:$viewpager")
             library("androidx-room-compiler", "androidx.room:room-compiler:$room")
@@ -57,6 +72,9 @@ dependencyResolutionManagement {
             library("kaidl-compiler", "com.github.kr328.kaidl:kaidl:$kaidl")
             library("kaidl-runtime", "com.github.kr328.kaidl:kaidl-runtime:$kaidl")
             library("rikkax-multiprocess", "dev.rikka.rikkax.preference:multiprocess:$multiprocess")
+            library("zxing", "com.google.zxing:core:$zxing")
+            library("nanohttpd", "org.nanohttpd:nanohttpd-websocket:$nanohttpd")
+            library("gson", "com.google.code.gson:gson:$gson")
         }
     }
 }

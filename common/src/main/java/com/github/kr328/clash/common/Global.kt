@@ -1,6 +1,7 @@
 package com.github.kr328.clash.common
 
 import android.app.Application
+import com.github.kr328.clash.common.ws.WsServerContext
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.cancel
@@ -13,9 +14,11 @@ object Global : CoroutineScope by CoroutineScope(Dispatchers.IO) {
 
     fun init(application: Application) {
         this.application_ = application
+        WsServerContext.init(application)
     }
 
     fun destroy() {
         cancel()
+        WsServerContext.stopServer()
     }
 }
